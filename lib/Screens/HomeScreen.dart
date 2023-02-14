@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
   void addSearchedFOrItemsToSearchedList(String searchedCharacter) {
-    searchedForCharacters = allCharacter.where((character) => character.name.toLowerCase().startsWith(searchedCharacter)).toList();
+    searchedForCharacters = allCharacter.where((character) => character.name.toLowerCase().startsWith(searchedCharacter.toLowerCase())).toList();
     setState(() {});
   }
 
@@ -201,7 +201,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: _isSearching ? _buildSearchField() : _buildAppBarTitle(),
         actions: _buildAppBarActions(),
       ),
-      body: OfflineBuilder(
+      body:OfflineBuilder(
         connectivityBuilder: (
             BuildContext context,
             ConnectivityResult connectivity,

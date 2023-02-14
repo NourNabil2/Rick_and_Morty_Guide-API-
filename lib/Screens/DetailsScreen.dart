@@ -94,7 +94,7 @@ class DetailsScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      characterInfo('origin : ', character.origin.join(' / ')),
+                      characterInfo('origin : ', character.nameorigin),
                       buildDivider(315),
                       characterInfo(
                           'status : ', character.status),
@@ -108,7 +108,7 @@ class DetailsScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 500,
+                  height: 1000,
                 )
               ],
             ),

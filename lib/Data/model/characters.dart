@@ -6,9 +6,10 @@ class Character {
   late String gender;
   late String image;
   late String created;
-  late List<dynamic> origin;
+  late String nameorigin;
 
   Character.fromJson(Map<String, dynamic> Json) {
+
     id = Json['id'];
     name = Json['name'];
     status = Json['status'];
@@ -16,7 +17,8 @@ class Character {
     gender = Json['gender'];
     image = Json['image'];
     created = Json['created'];
-    origin = Json['origin'];
+    nameorigin = Json['origin']["name"];
+    print('enter json');
   }
 }
 

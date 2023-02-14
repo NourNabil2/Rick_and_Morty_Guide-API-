@@ -20,10 +20,10 @@ class characterSERVICE
     dio=Dio(options);
   }
 
-  Future<List<dynamic>> getallcharacter () async
+  Future getallcharacter () async
   {
     try {
-      Response response = await dio.get('character');
+      Response response = await dio.get('/character');
       print(response.data.toString());
       return response.data;
     } catch (e) {
