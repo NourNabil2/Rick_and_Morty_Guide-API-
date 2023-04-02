@@ -5,7 +5,7 @@
 
 Don't forget to star⭐ the repo if you like what you see😉.
 # 🎥 Demo
-<img src="rev/ve.mp4" width="400" height="600">
+<img src="rev/ve.gif" width="400" height="600">
 
 
    ## Project Status
